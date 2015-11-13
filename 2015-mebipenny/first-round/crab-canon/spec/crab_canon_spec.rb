@@ -12,16 +12,30 @@ describe CrabCanon do
   end
 end
 
-describe MusicFileParser do
-  describe '#parse' do
-    it 'can take a file location and return an even number of MusicObjects' do
-      music_object_array = MusicFileParser.parse(abs_path('../../debug1/input'))
-      music_object_array.each do |music_object|
-        expect(music_object).to be_a MusicObject
-      end
-    end
-  end
-end
+# describe MusicFileParser do
+#   describe '#parse' do
+#     it 'can take a file location and return an even number of MusicObjects' do
+#       music_object_array = MusicFileParser.parse(abs_path('../../debug1/input'))
+#       music_object_array.each do |music_object|
+#         expect(music_object).to be_a MusicObject
+#       end
+#     end
+#   end
+# end
+#
+# describe MusicObjectParser do
+#   describe '#parse' do
+#     it 'returns a MusicObject' do
+#
+#     end
+#   end
+# end
+#
+# describe MusicObject do
+#
+# end
+
+
 
 def abs_path(relative_path)
   File.expand_path(relative_path, __FILE__)
